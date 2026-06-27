@@ -3,20 +3,54 @@
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    background-color: #f5f5f5;
+    background-color: #1e1e2e;
     color: #fff;
     position: relative;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .botonMenu{
     display: none;
     font-size: 1rem;
-    border: 1px solid #fff;
-    padding: 0.5em 1rem;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
+}
+
+.lista {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.lista li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .botonMenu {
+        display: block;
+    }
+
+    .lista {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1e1e2e;
+        padding: 1em 0;
+    }
+
+    .listaAbierta {
+        display: flex;
+        
+    }
 }
